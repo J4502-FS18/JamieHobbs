@@ -1,16 +1,18 @@
 body{
   text-align: center;
   font-family:'Open Sans', sans-serif;
-background-color: #FF8E55;
+background-color: #FFD5C2;
 }
 
 h1{
   color: #FFCB6D;
+  font-family: 'Kosugi Maru', sans-serif;
 }
 
 p{
   color: #FFBEBF;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Ultra', serif;
+
 
 }
 
@@ -20,16 +22,17 @@ ul{
 
 a{
   text-decoration: none;
+  color: #FFBEBF;
 }
 
-#nav li{
+#nav li {
   margin: 0;
   padding: 0;
   border-bottom: 1px solid #ccc;
   text-decoration: none;
 }
 
-#nav a:link, a:visited {
+#nav a:link, #nav a:visited {
   display: block;
   color: #E86A52;
   background-color: #FFCB6D;
@@ -41,7 +44,7 @@ a{
 
 }
 
-#nav a:hover, a:active {
+#nav a:hover,#nav a:active {
   background-color: #FFBEBF;
 }
 
@@ -50,5 +53,4 @@ a{
   display: block;
   color: #E86A52;
   font-family: 'Kosugi Maru', sans-serif;
-'
 }
