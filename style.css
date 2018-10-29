@@ -5,13 +5,13 @@ background-color: #FFD5C2;
 }
 
 h1{
-  color: #FFCB6D;
+  color: Black;
   font-family: 'Kosugi Maru', sans-serif;
 }
 
 p{
   color: #FFBEBF;
-  color: green;
+  color: black;
   font-family: 'Ultra', serif;
 }
 
@@ -67,7 +67,82 @@ a{
   font-family: 'Kosugi Maru', sans-serif;
 }
 
-.grid{
-  max-width: 800px;
+.cards {
+  margin: 0 20px;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
   display: grid;
+  grid-gap: 20px;
+  gap: 20px;
+  background-color: #E8D9E2;
+  color: #58687F;
+  grid-template-areas:
+  "a b"
+  "c d"
+  "e f";
+
+}
+
+.cards li{
+  background-color: #FFA9A3;
+  border: 1px solid #EFC4FF;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.cards img {
+  width: 100%;
+}
+
+.cardtext{
+  max-width: 200px;
+  text-align: center;
+  justify-content: center;
+}
+
+.card1{
+  grid-area: a;
+}
+
+.card2{
+  grid-area: b;
+}
+
+.card3{
+  grid-area: c;
+}
+
+.card4{
+  grid-area: d;
+}
+
+.card5{
+  grid-area: e;
+}
+
+.card6{
+  grid-area: f;
+}
+
+
+@media screen and (min-width: 499px) {
+  .cards{
+    display: grid;
+    grid-template-areas:
+    "e"
+    "a"
+    "b"
+    "c"
+    "d"
+    "f";
+  }
+}
+
+@media screen and (min-width: 699px) {
+  .cards{
+  grid-template-areas:
+  "e a b"
+  "c d f";
+  }
 }
